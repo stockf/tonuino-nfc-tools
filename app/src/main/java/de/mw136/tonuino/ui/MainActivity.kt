@@ -33,13 +33,13 @@ class MainActivity : NfcIntentActivity() {
         val openNfcSettingsButton = findViewById<View>(R.id.nfc_settings)
         val enabledContainer = findViewById<View>(R.id.enabled_container)
 
-        if (nfcAdapter == null) {
+        if (false && nfcAdapter == null) {
             errorContainer.visibility = View.VISIBLE
             errorView.text = getString(R.string.main_nfcadapter_is_null)
             openNfcSettingsButton.visibility = View.GONE
             enabledContainer.visibility = View.GONE
 
-        } else if (!nfcAdapter!!.isEnabled) {
+        } else if (false && !nfcAdapter!!.isEnabled) {
             errorContainer.visibility = View.VISIBLE
             errorView.text = getString(R.string.main_nfcadapter_disabled)
             openNfcSettingsButton.visibility = View.VISIBLE
