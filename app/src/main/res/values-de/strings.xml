@@ -37,24 +37,26 @@
     <string name="edit_hidden_label">hidden</string>
     <string name="edit_limit_numeric_value">Bitte eine Zahl zwischen %d und %d eingeben.</string>
 
-    <string-array name="edit_mode">
-        <item>Hörspiel</item>
-        <item>Album</item>
-        <item>Party</item>
-        <item>Einzel</item>
-        <item>Hörbuch</item>
-        <item>Admin</item>
-    </string-array>
-    <string-array name="edit_mode_description">
-        <item>Ein zufälliger Titel aus dem gewählten Ordner wird abgespielt.</item>
-        <item>Spielt alle Titel des Ordners in numerischer Reihenfolge.</item>
-        <item>Spielt zufällige Titel des Ordners in Endlosschleife.</item>
-        <item>Spielt den gewählten Titel aus dem Ordner.</item>
-        <item>Spielt alle Titel des Ordners in numerischer Reihenfolge und speichert den Fortschritt, sodass beim
-            nächsten Verwenden der Karte beim aktuellen Titel begonnen wird.
-        </item>
-        <item>Admin-Karten werden in Tonuino 2.0.1 noch nicht unterstützt.</item>
-    </string-array>
+    <string name="mode_random_episode">Hörspiel</string>
+    <string name="mode_album">Album</string>
+    <string name="mode_party">Party</string>
+    <string name="mode_single">Einzel</string>
+    <string name="mode_audio_book">Hörbuch</string>
+    <string name="mode_admin">Admin</string>
+    <string name="mode_special_random">Spezialmodus Von-Bis, Hörspiel</string>
+    <string name="mode_special_album">Spezialmodus Von-Bis, Album</string>
+    <string name="mode_special_party">Spezialmodus Von-Bis, Party</string>
+
+    <string name="description_random_episode">Eine zufällige Datei aus dem Ordner wiedergeben</string>
+    <string name="description_album">Den kompletten Ordner wiedergeben</string>
+    <string name="description_party">Ordner zufällig wiedergeben</string>
+    <string name="description_single">Eine bestimmte Datei im Ordner wiedergeben</string>
+    <string name="description_audio_book">Einen Ordner wiedergeben und den Fortschritt speichern</string>
+    <string name="description_admin">Admin Funktionen</string>
+    <string name="description_special_random">Eine zufällige Datei zwischen der Start und Enddatei wiedergeben</string>
+    <string name="description_special_album">Alle Dateien zwischen der Start und Enddatei wiedergeben</string>
+    <string name="description_special_party">Alle Dateien zwischen der Start und Enddatei zufällig wiedergeben</string>
+
     <string name="edit_mode_unknown">Der Modus \'%d\' ist unbekannt.</string>
 
     <string-array name="edit_modifier_tags">

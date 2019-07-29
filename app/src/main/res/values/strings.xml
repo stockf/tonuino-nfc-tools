@@ -45,23 +45,62 @@
     <string name="edit_hidden_label">hidden</string>
     <string name="edit_limit_numeric_value">Please enter a number between %d and %d.</string>
 
+    <string name="mode_random_episode">Radio play</string>
+    <string name="mode_album">Album</string>
+    <string name="mode_party">Party</string>
+    <string name="mode_single">Single</string>
+    <string name="mode_audio_book">Audio book</string>
+    <string name="mode_admin">Admin</string>
+    <string name="mode_special_random">Special mode from-to (radio play)</string>
+    <string name="mode_special_album">Special mode from-to (album)</string>
+    <string name="mode_special_party">Special mode from-to (party)</string>
+
+    <string name="description_random_episode">Play a random file from the folder.</string>
+    <string name="description_album">Play back the entire folder</string>
+    <string name="description_party">Play folder randomly.</string>
+    <string name="description_single">Play a specific file in the folder.</string>
+    <string name="description_audio_book">Play a folder and save the progress.</string>
+    <string name="description_admin">Admin functions</string>
+    <string name="description_special_random">Play a random file between the start and end file.</string>
+    <string name="description_special_album">Play all files between the start and end file.</string>
+    <string name="description_special_party">Randomly play all files between the start and end file.</string>
+
     <string-array name="edit_mode">
-        <item>Audio book (single file)</item>
-        <item>Album</item>
-        <item>Party</item>
-        <item>Single</item>
-        <item>Audio book (multiple files)</item>
-        <item>Admin</item>
+        <item>@string/mode_random_episode</item>
+        <item>@string/mode_album</item>
+        <item>@string/mode_party</item>
+        <item>@string/mode_single</item>
+        <item>@string/mode_audio_book</item>
     </string-array>
+    <string-array name="edit_mode_2_1">
+        <item>@string/mode_random_episode</item>
+        <item>@string/mode_album</item>
+        <item>@string/mode_party</item>
+        <item>@string/mode_single</item>
+        <item>@string/mode_audio_book</item>
+        <item>@string/mode_admin</item>
+        <item>@string/mode_special_random</item>
+        <item>@string/mode_special_album</item>
+        <item>@string/mode_special_party</item>
+    </string-array>
+
     <string-array name="edit_mode_description">
-        <item>A random file from the chosen folder will be played.</item>
-        <item>Plays all files inside the folder in numerical order.</item>
-        <item>Plays random files inside the folder.</item>
-        <item>Plays only the chosen file from the selected folder.</item>
-        <item>Plays all files inside the folder in numerical order and keeps track of the last started file. This way
-            the tag will play where it left off the last time.
-        </item>
-        <item>Tonuino 2.0.1 does not yet support admin tags.</item>
+        <item>@string/description_random_episode</item>
+        <item>@string/description_album</item>
+        <item>@string/description_party</item>
+        <item>@string/description_single</item>
+        <item>@string/description_audio_book</item>
+    </string-array>
+    <string-array name="edit_mode_description_2_1">
+        <item>@string/description_random_episode</item>
+        <item>@string/description_album</item>
+        <item>@string/description_party</item>
+        <item>@string/description_single</item>
+        <item>@string/description_audio_book</item>
+        <item>@string/description_admin</item>
+        <item>@string/description_special_random</item>
+        <item>@string/description_special_album</item>
+        <item>@string/description_special_party</item>
     </string-array>
     <string name="edit_mode_unknown">Mode \'%d\' is unknown.</string>
 
