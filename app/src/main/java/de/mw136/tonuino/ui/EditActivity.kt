@@ -10,8 +10,11 @@ import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import android.util.Log
 import android.view.View
-import android.widget.*
-import de.mw136.tonuino.*
+import android.widget.AdapterView
+import android.widget.Button
+import android.widget.Spinner
+import android.widget.Toast
+import de.mw136.tonuino.R
 import de.mw136.tonuino.nfc.*
 import de.mw136.tonuino.ui.edit.*
 import java.io.IOException
@@ -47,12 +50,14 @@ class EditActivity : NfcIntentActivity(), EditNfcData {
                     0 -> 1u
                     1, 2 -> 2u
                     else -> {
-                        Log.e(TAG, "tag type at position ${position} was not implememented.")
+                        Log.e(TAG, "tag type at position ${position} was not implemented.")
                         return
                     }
                 }
 
                 when (position) {
+                    1 ->
+                        editSimpleContainer.useNormalTagEditUi2_1()
                     2 ->
                         editSimpleContainer.useModifierTagEditUi()
                     else ->

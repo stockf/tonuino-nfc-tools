@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.TextView
-import de.mw136.tonuino.*
+import de.mw136.tonuino.R
+import de.mw136.tonuino.byteArrayToHex
 import de.mw136.tonuino.nfc.NfcIntentActivity
 import de.mw136.tonuino.nfc.TagData
 import de.mw136.tonuino.nfc.readFromTag
@@ -42,11 +43,12 @@ class ReadActivity() : NfcIntentActivity() {
             getString(R.string.edit_ext_folder_description, data.folder.toInt())
 
         setText(R.id.mode, data.mode)
+        val edit_mode_array = resources.getStringArray(R.array.edit_mode_2_1)
         findViewById<TextView>(R.id.mode_description).apply {
             val mode = data.mode.toInt()
-            if (mode in 1..6) {
-                val str = resources.getStringArray(R.array.edit_mode)[mode - 1] + ": " +
-                        resources.getStringArray(R.array.edit_mode_description)[mode - 1]
+            if (mode in 1..edit_mode_array.size) {
+                val str = edit_mode_array[mode - 1] + ": " +
+                        resources.getStringArray(R.array.edit_mode_description_2_1)[mode - 1]
                 text = str
             } else {
                 Log.w("$TAG:displayTonuinoInfo", "Cannot display a description for unknown mode '$mode'.")

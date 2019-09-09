@@ -33,6 +33,8 @@
     <string name="edit_special_label_for_album_mode">Titel</string>
     <string name="edit_special_label_for_modifier_sleep_timer">Minuten</string>
     <string name="edit_special2_label">Extra 2</string>
+    <string name="edit_special_from">Von</string>
+    <string name="edit_special_to">Bis</string>
 
     <string name="edit_hidden_label">hidden</string>
     <string name="edit_limit_numeric_value">Bitte eine Zahl zwischen %d und %d eingeben.</string>

@@ -11,6 +11,7 @@ import de.mw136.tonuino.nfc.EditNfcData
 import de.mw136.tonuino.nfc.TagData
 import de.mw136.tonuino.nfc.WhichByte
 import de.mw136.tonuino.ui.edit.simple.EditSimple
+import de.mw136.tonuino.ui.edit.simple.EditSimple2_1
 import de.mw136.tonuino.ui.edit.simple.ModifierTag
 
 
@@ -110,6 +111,17 @@ class EditSimpleContainer : EditFragment() {
         }
         if (!(child is EditSimple)) {
             child = EditSimple()
+            fragmentManager!!.beginTransaction().replace(R.id.children, child!!).commit()
+        }
+    }
+
+    fun useNormalTagEditUi2_1() {
+        if (tagType != TagType.Normal) {
+            listener?.setByte(WhichByte.FOLDER, 1u)
+            tagType = TagType.Normal
+        }
+        if (!(child is EditSimple2_1)) {
+            child = EditSimple2_1()
             fragmentManager!!.beginTransaction().replace(R.id.children, child!!).commit()
         }
     }
